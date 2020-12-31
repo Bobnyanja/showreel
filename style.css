@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+
+
+
+html {
+    
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header h1 {
+    
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+    font-size: 1.4em;
+}
+
+header,
+header:before {
+    background: 50% 50% / cover;
+}
+
+
+
+
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-size: contain, cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0),rgb(4, 0, 10)),
+    url("./images/BoBnyanja.jpg");
+    background-position: center;
+    background-size: contain;
+    animation: pic 10s linear;
+    animation-fill-mode: forwards;
+
+
+    
+}
+.drop{
+    width: 400px;
+    height: 680px;
+    text-align: center;
+    padding-top:100px;
+    
+
+
+   
+}
+.drop-center{
+    width:100%
+}
+.headerinfo{
+    width: 400px;
+    height: 470px;
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: 30px;
+    background-color:aliceblue
+    ;
+   
+    
+}
+
+
+
+
+
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 28px solid transparent;
+	border-right: 28px solid transparent;
+    border-bottom: 20px solid rgb(236, 244, 252);
+    margin-left: 54%;
+   
+}
+.profile-encloser{
+    display: flex;
+
+}
+
+.profile{
+    width: 90px;
+    height: 90px;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 80px;
+}
+.persona{
+    color: rgb(4, 0, 10);
+    text-transform: capitalize;
+    font-weight: 100;
+    margin-left: 30px;
+}
+.description{
+    text-align: justify;
+    padding-top: 20px;
+}
+.description p{
+    text-transform: initial;
+    color: rgb(4, 0, 10);
+}
+.checkout{
+    padding-top: 60px;
+}
+
+.checkout a{
+    background-color: #0383be;
+    color: aliceblue;
+    text-transform: initial;
+    height: 40px;
+    border:0px;
+    padding:8px;
+    font-size: .8em;
+    text-decoration: none;
+}
+
+
+
+@keyframes pic{
+    0%{
+        background-position: 20%;
+    
+        /* transform:translateX(0%) */
+    }
+    25%{
+        background-position: 70%;
+        /* transform:translateX(20%) */
+    }
+    50%{
+        opacity: .6;
+    }
+    65%{
+        background-position: 100%;
+    }
+    75%{
+        opacity:0;
+   
+    }
+    80%{
+        background-image: url('./images/bob photo.jpg');
+    }
+    90%{
+        opacity:1;
+       
+    }
+    100%{
+        background-position: 90%;
+    }
+}
+
+#container {
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    background: black;
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 60px;
+    color: grey;
+    width: 100%;
+    height:125vh;
+
+}
+#container h2{
+    font-size: 2em;
+    color: aliceblue;
+}
+div.gallery {
+    margin: 5px;
+ 
+    float: left;
+    width: 340px;
+    transition-duration: 1s;
+  }
+  
+  div.gallery:hover {
+    transform: translateY(-20px);
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 10px;
+    text-align: justify;
+
+  }
+  div.desc p{
+      font-size: .7em;
+      line-height: normal;
+  }
+  span{
+      font-weight: bold;
+      color: red;
+  }
+
+
+
+
+
+
+
+.threeD{
+
+    perspective: 900px;
+    width: 90%;
+    height: 80vh;
+    background-color: transparent;
+    margin-top: 28%;
+    display: flex
+    
+    
+ 
+
+
+}
+.flat{
+width: 60%;
+height:100%;
+/*background:url("./images/bob%20photo.jpg");*/
+transform: rotateY(35deg) rotateX(1deg);
+
+}
+.right{
+   
+    width: 500px;
+    height: 50vh;
+    padding-top: 60px
+}
+
+.right h2{
+    font-weight: 100;
+}
+
+
+
+#slider {
+	overflow: hidden;
+	width: 900px;
+	height: 400px;}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+    object-fit: contain;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main{
+    width: 100%;
+    height: 139vh;
+    background-color:darkred;
+    background-size: cover;
+    
+}
+#kmain{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+    padding: 50px;
+    /* animation:4s coloringthislife infinite; */
+background: rgb(31,35,113);
+background: linear-gradient(34deg, rgba(31,35,113,1) 48%, rgba(31,35,113,1) 56%, rgba(102,149,217,1) 81%);
+}
+header h2{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    text-transform: capitalize;
+    font-size: 2.4em;
+    color: #040a5f;
+}
+.company{
+    width: 400px;
+}
+
+.company img{
+    width: 120px;
+    height: 90px;
+
+}
+
+.contact{
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.icons{
+    padding: 30px;
+}
+.cont-left{
+    padding-left: 30px;
+
+    
+}
+
+.actual-cont{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+
+    
+}
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 70%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 70%;
+    height: 100%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+
+
+
+/*
+
+@keyframes coloringthislife{
+    0%{
+        
+         transform:translateX(0%) 
+    }
+    50%{
+             transform:translateY(20%) 
+    }
+   
+    
+    100%{
+             transform:translateX(2px) 
+    }
+}
+*/
+
+
+
+@media(max-width:760px){
+    header::before{
+        
+        background-size: cover;
+        /* transform: translateX(40%); */
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    #container{
+        padding: 30px;
+        height: 180vh;
+       
+    }
+    .recently-cover{
+        height: 80vh;
+        overflow: scroll;
+        
+    }
+    .threeD{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:50px;
+       
+    }
+    .flat{
+        width: 300px;
+        transform: rotateX(-48deg);
+        height: 200px
+    }
+    #slider{
+        height: 200px;
+        width: 350px;
+    }
+    .right{
+        500px;
+        padding: 0px;
+        
+    }
+ 
+  
+ 
+
+    #main{
+        height: 180vh
+    }
+    #kmain{
+        height: 170vh;
+        padding: 20px;
+    }
+    .company{
+        height: 300px;
+        overflow: hidden;
+        padding:20%;
+        margin: 0px;
+       
+        width: 200px;
+        overflow: hidden;
+    }
+    .company h2{
+        font-size:1.2em;
+        color:black;
+        
+    }
+    .contact{
+        height: 100px;
+        
+        padding: 0px;
+       
+    }
+    .icons{
+        padding: 20px
+    }
+    
+    @keyframes pic {
+        0%{
+            background-position: 0%;
+        }
+        100%{
+            background-position: 20%;
+        }
+        
+    }
+    
+    header h2{
+        font-size: 1.2em;
+      
+        
+    }
+    header h1{
+        display: none;
+    }
+    .drop-center{
+        position: absolute;
+        top: 270px;
+        left: -150px
+    }
+    .headerinfo{
+        border-radius: 20px;
+        width: 80%;
+        height: 300px;
+        padding: 18px;
+        position: absolute;
+        top: 290px;
+        left: -10px
+    
+    }
+    
+    .profile img{
+        width: 60px;
+        height: 60px;
+        padding: 6px
+        
+    }
+    .persona{
+        font-size: 1em;
+        margin:0px;
+        padding: 8px
+
+    }
+    .profile-encloser{
+        height: 60px
+    }
+  
+    .description{
+        padding: 16px;
+        font-size: .7em;
+        height: 100px
+    }
+    .checkout
+    
+    {
+        margin-top: 45px;
+    padding: 0px;
+        margin-left: 12px;
+    text-align: left}
+    .checkout a{font-size: .5em;
+    }
+
+    
+}
