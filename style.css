@@ -217,14 +217,15 @@ header::before {
 }
 div.gallery {
     margin: 5px;
- 
+    position: relative;
+    transform: scale(.5);
     float: left;
     width: 340px;
     transition-duration: 1s;
   }
   
   div.gallery:hover {
-    transform: translateY(-20px);
+   transform-style: initial;
   }
   
   div.gallery img {
@@ -334,7 +335,146 @@ transform: rotateY(35deg) rotateX(1deg);
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+#wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    perspective: 1500px;
+    transform: translateY(300px);
+    
+  }
   
+  .box-area {
+    position: relative;
+    transform-style: preserve-3d;
+    animation-name: rotate;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: rotateX(90deg) rotateY(90deg);
+    
+   
+  }
+  
+  @keyframes rotate {
+    0% {
+   
+        transform: rotate3d(1, 0, 0, 0deg);
+    }
+    20% {
+   
+        transform: rotate3d(1, 0, 0, -20deg);
+        transform: rotate3d(1,0, 0,-20deg);
+   
+      }
+       
+    25% {
+   
+        transform: rotate3d(1, 0, 0,-20deg);
+        /* transform: rotate3d(0, 1, 0,-80deg); */
+      }
+      45% {
+   
+        transform: rotate3d(1, 0, 0,-30deg);
+        transform: rotate3d(0, 1, 0,-100deg);
+      }
+
+  
+    100% {
+       
+      transform: rotate3d(0,1, 0,-280deg);
+     
+      
+      ;
+    }
+  }
+  
+  .box {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    /* border: 2px solid #262626; */
+    
+  }
+  .box h2{
+        position:absolute;
+        top: 60px;
+        left: 10px;
+        padding: 4px;
+  }
+  
+  
+  
+  #box-front {
+    transform: translateX(-200px) translateY(-200px) translateZ(200px);
+    background: url(./images/accelerators.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  
+  #box-back {
+    transform: translateX(-200px) translateY(-200px) translateZ(-200px);
+    background: rgba(1, 251, 236, 0.5);
+    background: url(./images/educate.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  #box-right {
+    transform: translateY(-200px) rotateY(90deg);
+    background: rgba(4, 255, 116, 0.5);
+    background: url(./images/sanergy.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  #box-left {
+    transform: translateY(-200px) translateX(-400px) rotateY(90deg);
+    background: rgba(216, 255, 0, 0.5);
+    background: url(./images/Capture.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  #box-top {
+    transform: translateX(-200px) translateY(-400px) rotateX(90deg);
+    background: rgba(0, 6, 246, 0.5);
+  }
+  
+  #box-bottom {
+    transform: translateX(-200px) rotateX(90deg);
+    background: rgba(255, 30, 0, 0.5);
+    text-align: center;
+    font-size: 2em;
+  }
+  
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
