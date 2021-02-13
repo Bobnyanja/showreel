@@ -96,8 +96,8 @@ header::before {
     width:100%
 }
 .headerinfo{
-    width: 400px;
-    height: 470px;
+    width: 430px;
+    height: 520px;
     border-radius: 20px;
     padding: 30px;
     margin-left: 30px;
@@ -251,6 +251,7 @@ div.gallery {
   .recently-cover{
       width: 90%;
       margin: auto;
+      height: 40vh;
   }
 
 
@@ -640,19 +641,48 @@ header h2{
     }
     #container{
         padding: 30px;
-        height: 180vh;
+        height: 150vh;
        
     }
     .recently-cover{
         height: 80vh;
-        overflow: scroll;
+        overflow: visible;
+        transform: scale(.5);
+        width: 700px;
+        height: 70vh;
+        
         
         
     }
+    .gallery:nth-child(1){
+        top: -300px;
+        left: -400px;
+      
+        
+    }
+    
+    .gallery:nth-child(2){
+        top:-300px;
+        left: -400px
+        
+    }
+    .gallery:nth-child(3){
+        top:-50px;
+        left: -400px;
+        
+    }
+    .gallery:nth-child(4){
+        top:-50px;
+        left: -400px
+        
+    }
+
     .threeD{
         display: flex;
         flex-wrap: wrap;
-        margin-top:50px;
+        position: relative;
+        top:-260px;
+       
        
     }
     .flat{
@@ -672,10 +702,10 @@ header h2{
  
 
     #main{
-        height: 180vh
+        height: 150vh
     }
     #kmain{
-        height: 170vh;
+        height: 130vh;
         padding: 20px;
     }
     .company{
@@ -694,6 +724,8 @@ header h2{
     }
     .contact{
         height: 100px;
+        position: relative;
+        top: -100px;
         
         padding: 0px;
        
@@ -728,7 +760,7 @@ header h2{
     .headerinfo{
         border-radius: 20px;
         width: 80%;
-        height: 300px;
+        height: 350px;
         padding: 18px;
         position: absolute;
         top: 290px;
@@ -760,9 +792,12 @@ header h2{
     .checkout
     
     {
-        margin-top: 45px;
-    padding: 0px;
+        
+    padding: 30px;
         margin-left: 12px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
     text-align: left}
     .checkout a{font-size: .5em;
     }
