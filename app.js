@@ -29,7 +29,7 @@ sanergy.onclick = function() {
 }
 fresha.onclick = function() {
   modal.style.display = "block";
-  content.innerHTML='<div class maintain><iframe class="responsive-iframe" class="responsive-iframe" src="https://player.vimeo.com/video/377787992" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>';
+  content.innerHTML='<div class maintain><iframe class="responsive-iframe" src="https://player.vimeo.com/video/103506064" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>';
 }
 
 
