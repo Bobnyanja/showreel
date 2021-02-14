@@ -44,3 +44,44 @@ function myfoo(){
 });
 }
 // When the user clicks anywhere outside of the modal, close it
+
+function expander() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+  var x = window.innerWidth;
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+    if (x <=760) { // If media query matches
+      document.getElementById("headerInfo").style.width = "90%";
+      document.getElementById("headerInfo").style.top = "220px";
+      document.getElementById("headerInfo").style.height = "400px";
+   
+    } else {
+      document.getElementById("headerInfo").style.width = "430px";
+    document.getElementById("headerInfo").style.height = "520px";
+    document.getElementById("headerInfo").style.top = "240px";
+  
+    }
+    
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Collapse"; 
+    moreText.style.display = "inline";
+    if (x <=760) { // If media query matches
+      document.getElementById("headerInfo").style.width = "90%";
+      document.getElementById("headerInfo").style.height = "600px";
+      document.getElementById("headerInfo").style.top = "40px";
+    } else {
+      document.getElementById("headerInfo").style.width = "560px";
+      document.getElementById("headerInfo").style.height = "800px";
+    }
+    
+   
+  }
+}
+
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body >
+<body>
 
     <header>
 
@@ -21,7 +21,7 @@
                 <div class="triangle-up"></div>
             </div>
 
-            <div class="headerinfo">
+            <div id="headerInfo" class="headerinfo">
                 <div class="profile-encloser">
                     <div class="profile">
                         <img src="./images/bobaward.jfif" alt="">
@@ -31,11 +31,35 @@
                     </h3>
                 </div>
                 <div class="description">
-                    <p>Bob is an accomplished all round versatile film professional with a proven ability to create, develop, shoot and produce the full gamut of ,film and Television Productions. He has created, self financed, and produced two award winning local features and directed two other with local producers.  He has the full academic training and credentials in the film Business and has through 25 year experience worked on several different genres of film and television production, from the simple management level all the way to the  director producer positions.
+                    <p>Bob is an accomplished all round versatile film professional with a proven ability to create,
+                        develop, shoot and produce the full gamut of ,film and Television Productions. He has created,
+                        self financed, and produced two award winning local features and directed two other with local
+                        producers. He has the full academic training and credentials in the film Business and has
+                        through 25 year experience worked on several different genres of film and television production,
+                        from the simple management level all the way to the director producer positions.
 
- 
+                        <span id="dots">...</span><span id="more">He has successfully, managed a production house for 23
+                            years, under which he has made films for local corporate organizations like Unilever, The
+                            Coca Cola Company, Procter and Gumble and Safaricom amongst many others. Internationally Bob
+                            has made films for Comic Relief, Unicef, Bill and Melinda Gates Foundation, BBC, ITV, China
+                            Global Television, ARD Germany and many others.. The production house has also serviced
+                            several international film and television productions.
 
-                      .</p>
+                            <br>
+
+
+                            In leadership, Bob has served as Chairman of the Kenya Film and Television Professional
+                            association for four years, Served in the government task force that led to the setting up
+                            of the Kenya Film Commission, Served as a trustee of the Kenya International film Festival
+                            for six year. His contribution to the arts earned him the presidential Award of Order of the
+                            Grand Warrior of Kenya.
+
+                            Bob is widely travelled within the African continent and has filmed in 17 countries across
+                            the continent.</span>
+                    </p>
+                    <button onclick="expander()" id="myBtn">Read more</button>
+
+                    .</p>
                 </div>
                 <div class="checkout">
                     <a href="#container" class="acheck">My work</a>
@@ -56,76 +80,94 @@
 
 
 
-            <div id="myModal" class="modal">
+        <div id="myModal" class="modal">
             <div class="modal-content">
                 <button onclick="myfoo()" class="close">&times;</button>
                 <div class="actual-cont"></div>
             </div>
 
-            </div>
-       
+        </div>
+
 
         <div class="recently-cover">
-            <div id="accelerators" class="gallery">
-            
-                <div id="wrapper">
 
-                    <div class="box-area">
-                        <a href="https://cinematic-kenya.com"><div id="box-front" class="box"> <a href="https://cinematic-kenya.com"></a> </div></a>
-                        <div id="box-front" class="box"> <img src="./images/churchil.PNG"/></div>
-                      <div id="box-right" class="box"> <img src="./images/visanga.jpg"/></div>
-                      <div id="box-back" class="box"><img src="./images/ndoa.PNG"/></div>
-                      <div id="box-left" class="box"><img src="./images/sunlight.PNG"/></div>
-                      <div id="box-top" class="box"></div>
-                      <div id="box-bottom" class="box"><h2>Tv-Shows</h2> </div>
-                    </div>
-                  </div>
-            </div>
 
             <div id="educate" class="gallery">
-               
+
                 <div id="wrapper">
 
                     <div class="box-area">
-                        <a href="https://cinematic-kenya.com"><div id="box-front" class="box"> <a href="https://cinematic-kenya.com"></a> </div></a>
-                        <div id="box-front" class="box"><img src="./images/theatre.PNG"/></div>
-                      <div id="box-right" class="box"><img src="./images/shea.PNG"/></div>
-                      <div id="box-back" class="box"><img src="./images/messangers.jpg"/></div>
-                      <div id="box-left" class="box"><img src="./images/horse.PNG"/></div>
-                      <div id="box-top" class="box"></div>
-                      <div id="box-bottom" class="box"><h2>Docs</h2> </div>
+                        <a href="https://cinematic-kenya.com">
+                            <div id="box-front" class="box"> <a href="https://cinematic-kenya.com"></a> </div>
+                        </a>
+                        <div id="box-front" class="box"><img src="./images/theatre.PNG" /></div>
+                        <div id="box-right" class="box"><img src="./images/shea.PNG" /></div>
+                        <div id="box-back" class="box"><img src="./images/messangers.jpg" /></div>
+                        <div id="box-left" class="box"><img src="./images/horse.PNG" /></div>
+                        <div id="box-top" class="box"></div>
+                        <div id="box-bottom" class="box">
+                            <h2>Docs</h2>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
 
             <div id="sanergy" class="gallery">
                 <div id="wrapper">
 
                     <div class="box-area">
-                        <a href="https://cinematic-kenya.com"><div id="box-front" class="box"> <a href="https://cinematic-kenya.com"></a> </div></a>
-                        <div id="box-front" class="box"><img src="./images/flora.PNG"/></div>
-                      <div id="box-right" class="box"><img src="./images/doshi1.PNG"/></div>
-                      <div id="box-back" class="box"><img src="./images/doshi2.PNG"/></div>
-                      <div id="box-left" class="box"><img src="./images/fresha.PNG"/></div>
-                      <div id="box-top" class="box"></div>
-                      <div id="box-bottom" class="box"><h2>Tv-Com-</h2> </div>
+                        <a href="https://cinematic-kenya.com">
+                            <div id="box-front" class="box"> <a href="https://cinematic-kenya.com"></a> </div>
+                        </a>
+                        <div id="box-front" class="box"><img src="./images/flora.PNG" /></div>
+                        <div id="box-right" class="box"><img src="./images/doshi1.PNG" /></div>
+                        <div id="box-back" class="box"><img src="./images/doshi2.PNG" /></div>
+                        <div id="box-left" class="box"><img src="./images/fresha.PNG" /></div>
+                        <div id="box-top" class="box"></div>
+                        <div id="box-bottom" class="box">
+                            <h2>Tv-Com-</h2>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
 
             <div id="fresha" class="gallery">
                 <div id="wrapper">
 
                     <div class="box-area">
-                        <a href="https://cinematic-kenya.com"><div id="box-front" class="box"> <a href="https://cinematic-kenya.com"></a> </div></a>
-                        <div id="box-front" class="box"><img src="./images/rugged.jpg"/></div>
-                      <div id="box-right" class="box"><img src="./images/Malooned.jpg"/></div>
-                      <div id="box-back" class="box"><img src="./images/lion.jpg"/></div>
-                      <div id="box-left" class="box"><img src="./images/ruggedpriest_banner.jpg"/></div>
-                      <div id="box-top" class="box"></div>
-                      <div id="box-bottom" class="box"><h2>Films</h2> </div>
+                        <a href="https://cinematic-kenya.com">
+                            <div id="box-front" class="box"> <a href="https://cinematic-kenya.com"></a> </div>
+                        </a>
+                        <div id="box-front" class="box"><img src="./images/rugged.jpg" /></div>
+                        <div id="box-right" class="box"><img src="./images/Malooned.jpg" /></div>
+                        <div id="box-back" class="box"><img src="./images/lion.jpg" /></div>
+                        <div id="box-left" class="box"><img src="./images/ruggedpriest_banner.jpg" /></div>
+                        <div id="box-top" class="box"></div>
+                        <div id="box-bottom" class="box">
+                            <h2>Films</h2>
+                        </div>
                     </div>
-                  </div>
+                </div>
+            </div>
+
+            <div id="accelerators" class="gallery">
+
+                <div id="wrapper">
+
+                    <div class="box-area">
+                        <a href="https://cinematic-kenya.com">
+                            <div id="box-front" class="box"> <a href="https://cinematic-kenya.com"></a> </div>
+                        </a>
+                        <div id="box-front" class="box"> <img src="./images/churchil.PNG" /></div>
+                        <div id="box-right" class="box"> <img src="./images/visanga.jpg" /></div>
+                        <div id="box-back" class="box"><img src="./images/ndoa.PNG" /></div>
+                        <div id="box-left" class="box"><img src="./images/sunlight.PNG" /></div>
+                        <div id="box-top" class="box"></div>
+                        <div id="box-bottom" class="box">
+                            <h2>Tv-Shows</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -180,38 +222,44 @@
         </div>
         <div class='contact'>
             <div class="cont-right">
-               <a href="https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQFeTCCO7z8gtQAAAXaOxWmYXp0bIRErZWhsJbgssxrpzrCsThmdl0ata_23HBj5yUAasYXrWipR1j9kep2q3BWEsjqSLE2M7HK9eUQHUJ5rGpdkQYh8fCKH5kiMLYmDerSJeCQ=&originalReferer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fke.linkedin.com%2Fin%2Fbob-nyanja-director-producer-directing-scripting-line-production-film-fixer-visual-art-98a8561a"><img class="icons" src="https://img.icons8.com/fluent/48/000000/linkedin.png" /></a>
-                
-                <a href="https://vimeo.com/user12372487">   <img class='icons' src="https://img.icons8.com/color/48/000000/vimeo.png" /></a>
-             
+                <a
+                    href="https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQFeTCCO7z8gtQAAAXaOxWmYXp0bIRErZWhsJbgssxrpzrCsThmdl0ata_23HBj5yUAasYXrWipR1j9kep2q3BWEsjqSLE2M7HK9eUQHUJ5rGpdkQYh8fCKH5kiMLYmDerSJeCQ=&originalReferer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fke.linkedin.com%2Fin%2Fbob-nyanja-director-producer-directing-scripting-line-production-film-fixer-visual-art-98a8561a"><img
+                        class="icons" src="https://img.icons8.com/fluent/48/000000/linkedin.png" /></a>
 
-                <a href="https://en.wikipedia.org/wiki/Bob_Nyanja"><img class='icons' src="https://img.icons8.com/color/48/000000/wikipedia-logo.png" /></a>
-                
-                <a href="https://twitter.com/bobnyanja?lang=en"> <img class='icons' src="https://img.icons8.com/fluent/48/000000/twitter.png" /></a>
-               
+                <a href="https://vimeo.com/user12372487"> <img class='icons'
+                        src="https://img.icons8.com/color/48/000000/vimeo.png" /></a>
+
+
+                <a href="https://en.wikipedia.org/wiki/Bob_Nyanja"><img class='icons'
+                        src="https://img.icons8.com/color/48/000000/wikipedia-logo.png" /></a>
+
+                <a href="https://twitter.com/bobnyanja?lang=en"> <img class='icons'
+                        src="https://img.icons8.com/fluent/48/000000/twitter.png" /></a>
+
             </div>
 
-           
+
 
         </div>
         <div class="cont-left" onclick="myfoo()">
             <h2>Reach Me </h2>
             <div class="spacer">
-                <p>Mail   Bob@cinematic-kenya.com  </p>
+                <p>Mail Bob@cinematic-kenya.com </p>
                 <p>Tel: 0128 4674 6465 489</p>
             </div>
         </div>
-        
+
 
     </section>
 
 
-  
+
 
 
 
 </body>
 <script src="./app.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </html>

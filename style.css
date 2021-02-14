@@ -95,7 +95,7 @@ header::before {
 .drop-center{
     width:100%
 }
-.headerinfo{
+#headerInfo{
     width: 430px;
     height: 520px;
     border-radius: 20px;
@@ -138,8 +138,9 @@ header::before {
 .persona{
     color: rgb(4, 0, 10);
     text-transform: capitalize;
-    font-weight: 100;
+    font-weight: 300;
     margin-left: 30px;
+
 }
 .description{
     text-align: justify;
@@ -148,9 +149,23 @@ header::before {
 .description p{
     text-transform: initial;
     color: rgb(4, 0, 10);
+    font-weight: 100;
+    font-size: 1em;
+
 }
+.description span {
+    color: rgb(4, 0, 10);
+    font-weight: 100;
+    font-size: 1em;
+}
+
+#more{
+    display: none;
+}
+
+
 .checkout{
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 .checkout a{
@@ -502,11 +517,10 @@ transform: rotateY(35deg) rotateX(1deg);
 
 
 
-
 #main{
     width: 100%;
     height: 139vh;
-    background-color:darkred;
+    background-color:black;
     background-size: cover;
     
 }
@@ -767,17 +781,18 @@ header h2{
     }
     .drop-center{
         position: absolute;
-        top: 270px;
+        top: 200px;
         left: -150px
     }
-    .headerinfo{
+    #headerInfo{
         border-radius: 20px;
-        width: 80%;
-        height: 350px;
-        padding: 18px;
+        width: 90%;
+        height: 400px;
+        padding: 8px;
         position: absolute;
-        top: 290px;
-        left: -10px
+        top: 220px;
+        left: -20px;
+        
     
     }
     
