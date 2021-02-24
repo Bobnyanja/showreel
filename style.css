@@ -93,6 +93,27 @@ header::before {
 
    
 }
+#pauseMontage{
+    width:100px;
+    border:0px;
+    outline: 0px;
+    height: 40px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 10px;
+position: absolute;
+
+top:50%;
+left:2%;
+color:blue;
+font-size: bold;
+
+}
+
+
+
+
+
 .drop-center{
     width:100%
 }
@@ -187,6 +208,19 @@ header::before {
     min-width: 100%; 
     min-height: 100%;
     display: none;
+    object-fit:cover;
+    min-width: 100%; 
+    min-height: 100%; 
+  
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+  
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     
   }
 
@@ -712,6 +746,9 @@ header h2{
         top:-50px;
         left: -400px
         
+    }
+    #pauseMontage{
+        top:70%;
     }
 
     .threeD{

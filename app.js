@@ -11,6 +11,9 @@ var educate = document.getElementById("educate");
 var sanergy = document.getElementById("sanergy");
 var fresha = document.getElementById("fresha");
 var video = document.getElementById("myVideo");
+var drop = document.getElementById("drop");
+var pauser = document.getElementById("pauseMontage");
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -84,5 +87,15 @@ function expander() {
    
   }
 }
-setTimeout(function(){video.style.display='inherit';video.play(); }, 7500);
+function playMontage(){
+  video.style.display='inherit';
+  drop.style.display="none"
+  video.play(); };
+
+  function pauseMontage(){
+    video.style.display='none';
+    drop.style.display="inherit"
+    video.pause(); };
+
+
 
