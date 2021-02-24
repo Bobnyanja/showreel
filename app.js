@@ -10,6 +10,7 @@ var accelerators = document.getElementById("accelerators");
 var educate = document.getElementById("educate");
 var sanergy = document.getElementById("sanergy");
 var fresha = document.getElementById("fresha");
+var video = document.getElementById("myVideo");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -83,5 +84,5 @@ function expander() {
    
   }
 }
-
+setTimeout(function(){video.style.display='inherit';video.play(); }, 7500);
 

@@ -83,6 +83,7 @@ header::before {
     
 }
 .drop{
+    position:absolute;
     width: 400px;
     height: 680px;
     text-align: center;
@@ -179,17 +180,25 @@ header::before {
     text-decoration: none;
 }
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    display: none;
+    
+  }
 
 
 @keyframes pic{
     0%{
         background-position: 20%;
     
-        /* transform:translateX(0%) */
     }
     25%{
         background-position: 70%;
-        /* transform:translateX(20%) */
+        
     }
     50%{
         opacity: .6;
@@ -209,7 +218,8 @@ header::before {
        
     }
     100%{
-        background-position: 90%;
+        
+        background-color: transparent;
     }
 }
 
