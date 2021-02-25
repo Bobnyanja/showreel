@@ -75,7 +75,7 @@ header::before {
     linear-gradient(to bottom, rgba(245, 246, 252, 0),rgb(4, 0, 10)),
     url("./images/BoBnyanja.jpg");
     background-position: center;
-    background-size: contain;
+    background-size:cover;
     animation: pic 10s linear;
     animation-fill-mode: forwards;
 
