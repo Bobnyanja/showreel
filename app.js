@@ -126,7 +126,7 @@ function playMontage(){
                 && currentPlayPos < (lastPlayPos + offset)
                 && !video.paused
             ) {
-              pauser.innerHTML="<div id='loader'></div>"
+              pauser.innerHTML="Loading ..."
             console.log("buffering")
 
             bufferingDetected = true;
