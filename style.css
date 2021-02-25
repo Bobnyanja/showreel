@@ -82,7 +82,7 @@ header::before {
 
     
 }
-.drop{
+#drop{
     position:absolute;
     width: 400px;
     height: 680px;
@@ -674,6 +674,31 @@ header h2{
     border: none;
   }
 
+  #loader {
+    border: 10px solid rgb(14, 1, 1);
+    border-radius: 50%;
+    border-top: 10px solid #6634db;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top:50%;
+    left:50%;
+    display: none;
+    
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 
 
@@ -749,6 +774,7 @@ header h2{
     }
     #pauseMontage{
         top:70%;
+      display: none;
     }
 
     .threeD{
@@ -771,6 +797,7 @@ header h2{
    .right{
        padding: 20px;
    }
+
  
   
  
@@ -813,7 +840,7 @@ header h2{
             background-position: 0%;
         }
         100%{
-            background-position: 20%;
+            background-position: 30%;
         }
         
     }
@@ -842,6 +869,26 @@ header h2{
         
     
     }
+  
+    #drop{
+        position: absolute;
+        bottom:-320px;
+        animation-name: uncoverdrop;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay: 4s;
+        /* overflow: scroll; */
+
+    }
+    @keyframes uncoverdrop {
+        0%   {  top:200px;
+        opacity: 0;}
+        /* 25%  {top:0px;}
+        50%  { top:200px;} */
+        100%  {opacity: 1; top:60px;}
+   
+      }
     
     .profile img{
         width: 60px;
@@ -864,6 +911,7 @@ header h2{
         font-size: .7em;
         height: 100px
     }
+  
     .checkout
     
     {

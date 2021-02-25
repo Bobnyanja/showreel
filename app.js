@@ -13,7 +13,8 @@ var fresha = document.getElementById("fresha");
 var video = document.getElementById("myVideo");
 var drop = document.getElementById("drop");
 var pauser = document.getElementById("pauseMontage");
-
+var loader = document.getElementById("loader");
+var header = document.getElementById("headerInfo");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -35,9 +36,6 @@ fresha.onclick = function() {
   modal.style.display = "block";
   content.innerHTML='<div class maintain><iframe class="responsive-iframe" src="https://player.vimeo.com/video/103506064" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>';
 }
-
-
-
 
 // When the user clicks on <span> (x), close the modal
 function myfoo(){
@@ -89,13 +87,65 @@ function expander() {
 }
 function playMontage(){
   video.style.display='inherit';
-  drop.style.display="none"
+  drop.style.display="none";
+  pauser.style.display='inherit';
+  
   video.play(); };
 
   function pauseMontage(){
     video.style.display='none';
-    drop.style.display="inherit"
-    video.pause(); };
+    drop.style.display="inherit";
+    pauser.style.display='none';
+    video.pause(); 
+    header.style.opacity=1;
+  };
 
 
 
+
+
+    var checkInterval  = 70.0 // check every 50 ms (do not use lower values)
+    var lastPlayPos    = 0
+    var currentPlayPos = 0
+    var bufferingDetected = false
+  
+    
+    setInterval(checkBuffering, checkInterval)
+    function checkBuffering() {
+        currentPlayPos = video.currentTime
+    
+        // checking offset should be at most the check interval
+        // but allow for some margin
+        var offset = (checkInterval - 20) / 1000
+    
+        // if no buffering is currently detected,
+        // and the position does not seem to increase
+        // and the player isn't manually paused...
+        if (
+                !bufferingDetected 
+                && currentPlayPos < (lastPlayPos + offset)
+                && !video.paused
+            ) {
+              pauser.innerHTML="<div id='loader'></div>"
+            console.log("buffering")
+
+            bufferingDetected = true;
+            
+
+        }
+    
+        // if we were buffering but the player has advanced,
+        // then there is no buffering
+        if (
+            bufferingDetected 
+            && currentPlayPos > (lastPlayPos + offset)
+            && !video.paused
+            ) {
+              pauser.innerHTML='pause'
+            console.log("not buffering anymore")
+            bufferingDetected = false;
+            
+        }
+        lastPlayPos = currentPlayPos
+    }
+ //movinf profile description   
