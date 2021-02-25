@@ -15,7 +15,6 @@ var drop = document.getElementById("drop");
 var pauser = document.getElementById("pauseMontage");
 var loader = document.getElementById("loader");
 var header = document.getElementById("headerInfo");
-var textIn = document.getElementById("textIn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -127,16 +126,9 @@ function playMontage(){
                 && currentPlayPos < (lastPlayPos + offset)
                 && !video.paused
             ) {
-              textIn.innerText="Loading ...";
-              loader.style='display:inherit; ';
-              pauser.style='background: transparent; width:200px; height:40px'
- 
-
-        
-            
+              pauser.innerText="Loading video...";
               
-              
-        
+       
 
             bufferingDetected = true;
             
@@ -150,11 +142,8 @@ function playMontage(){
             && currentPlayPos > (lastPlayPos + offset)
             && !video.paused
             ) {
-    
-              textIn.innerText='Close';
-              loader.style.display='none';
-              pauser.style='width:100px;height:40px background: rgb(131,58,180);background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);'
-          
+              pauser.innerHTML='pause'
+           
             bufferingDetected = false;
             
         }
