@@ -104,7 +104,7 @@ function playMontage(){
 
 
 
-    var checkInterval  = 70.0 // check every 50 ms (do not use lower values)
+    var checkInterval  = 200.0 // check every 50 ms (do not use lower values)
     var lastPlayPos    = 0
     var currentPlayPos = 0
     var bufferingDetected = false
