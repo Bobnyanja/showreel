@@ -95,6 +95,7 @@ function playMontage(){
     video.style.display='none';
     drop.style.display="inherit";
     pauser.style.display='none';
+    myVid.pause()
     
     header.style.opacity=1;
   };
