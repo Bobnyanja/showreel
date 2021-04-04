@@ -9,7 +9,7 @@ var content = document.getElementsByClassName("actual-cont")[0];
 var accelerators = document.getElementById("accelerators");
 var educate = document.getElementById("educate");
 var sanergy = document.getElementById("sanergy");
-var fresha = document.getElementById("fresha");
+var commercial = document.getElementById("commercial");
 var video = document.getElementById("playerly");
 var drop = document.getElementById("drop");
 var pauser = document.getElementById("pauseMontage");
@@ -32,7 +32,7 @@ sanergy.onclick = function() {
   modal.style.display = "block";
   content.innerHTML='<div class maintain><iframe class="responsive-iframe" src="https://player.vimeo.com/video/410032080" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>';
 }
-fresha.onclick = function() {
+commercial.onclick = function() {
   modal.style.display = "block";
   content.innerHTML='<div class maintain><iframe class="responsive-iframe" src="https://player.vimeo.com/video/103506064" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>';
 }
