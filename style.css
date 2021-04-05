@@ -394,18 +394,19 @@ text-transform: lowercase;
 
 @keyframes pic{
     0%{
-        background-position: 20%;
+        background-position: 20px;
     
     }
+   
     25%{
-        background-position: 70%;
+        background-position: 70px;
         
     }
     50%{
         /* opacity: .6; */
     }
     65%{
-        background-position: 100%;
+        background-position: 100px;
     }
     75%{
         opacity:0;
@@ -712,27 +713,6 @@ header h2{
   }
 
 
-
-/*
-
-@keyframes coloringthislife{
-    0%{
-        
-         transform:translateX(0%) 
-    }
-    50%{
-             transform:translateY(20%) 
-    }
-   
-    
-    100%{
-             transform:translateX(2px) 
-    }
-}
-*/
-
-
-
 @media(max-width:760px){
     header::before{
         
@@ -756,15 +736,17 @@ header h2{
         
         
     }
-    .items-wrapper{
-      display: inline;
-    }
+   .item{
+     padding: 10px;
+     text-align: center;
+   }
     .modal{
-        margin-left: -25px;
-        height: 400px;
+        margin: auto;
+        height: auto;
     
-    }
-    .items-wrapper h2{font-weight: 900;font-size: .6em;transform: scale(.6);}
+    }.items-wrapper{height: auto;}
+    .items-wrapper h2{font-weight: 300;font-size: .3em;transform: scale(.5);width:100%;}
+    .items-wrapper img{width:40px;height: 40px;}
    
     #pauseMontage{ 
         top:70%;
@@ -782,7 +764,9 @@ header h2{
     .flat{
         width: 300px;
         transform: rotateX(-48deg);
-        height: 200px
+        height: 200px;
+        margin: auto;
+
     }
     #slider{
         height: 200px;
@@ -804,7 +788,7 @@ header h2{
     }
     #kmain-item{
       
-      background-color: #040a5f;
+      background-color: #01020fe8;
    margin: 4px;
       height: 200px;
       padding: 10px;
