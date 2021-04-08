@@ -62,28 +62,36 @@ header:before {
 
 header::before {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    background-size: contain, cover;
-    transform-origin: center center 0;
+    position: absolute; top: 0;
+    left: 0; right: 0; bottom: 0; display: block;
+    background-size: contain, cover; transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
-    z-index: -1;
-    min-height: 100vh;
-    background-image:
+    z-index: -1;  min-height: 100vh;  background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, 0),rgb(4, 0, 10)),
     url("./images/BoBnyanja.jpg");
-    background-position: center;
-    background-size:cover;
-    animation: pic 10s linear;
-    animation-fill-mode: forwards;
-
-
-    
+    background-position:center; background-size:cover;
+    animation: pic 10s linear;  animation-fill-mode: forwards;  
 }
+
+
+.play{
+  position: absolute; display: flex; width:auto;
+  align-items: center;justify-content:flex-start;
+  height: auto; top: 70%; left: 80%;
+  text-transform: capitalize;
+  font-size: 1em; font-weight: 900;
+  overflow: visible;
+  color: white; border-bottom: solid 2px red;
+  animation:load 5s infinite;;
+}
+@keyframes load{
+  0%{}
+  10%{border-bottom: solid 2px white; }
+
+  100%{border-bottom: 0;color: maroon;}
+}
+
+
 #drop{
     position:absolute;
     width: 400px;
@@ -111,8 +119,6 @@ color:blue;
 
 font-size:1em;
 text-transform: lowercase;
-
-
 }
 /* player config secction */
 
@@ -394,7 +400,7 @@ text-transform: lowercase;
 
 @keyframes pic{
     0%{
-        background-position: 20px;
+        background-position: 10px;
     
     }
    
@@ -404,24 +410,33 @@ text-transform: lowercase;
     }
     50%{
         /* opacity: .6; */
+        
     }
     65%{
-        background-position: 100px;
+        background-position: 500px;
     }
     75%{
-        opacity:0;
+        opacity:0.1;
+      
    
     }
     80%{
+      
         background-image: url('./images/bob photo.jpg');
+       
     }
     90%{
-        opacity:1;
+       
+     
        
     }
     100%{
-        
+     
         background-color: transparent;
+        background-position: 300px ;
+        opacity:1;
+        
+       
     }
 }
 
@@ -594,6 +609,7 @@ header h2{
     font-size: 2.4em;
     color: #040a5f;
 }
+
 #kmain-item{flex:2; color: white;}
 .company{
   padding-left: 5%;
