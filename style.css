@@ -468,12 +468,18 @@ text-transform: lowercase;
       
   }
 
-  .items-wrapper{width: 100%; height: 40vh;  display: flex;  flex-wrap: wrap;  background-color: #02042b;}
+  .items-wrapper{width: 100%; height: 40vh;  display: flex;  flex-wrap: wrap;  background-color:black;overflow: hidden;}
   .items-wrapper h2{font-weight: 400;}
-  .item{flex: 2;background-color: rgba(0, 1, 3, 0.808);display:flex;flex-direction:column;margin: 2px;
-     align-items: center;justify-content: center;}
-
-  
+  .item{flex: 2; position: relative; background-color: rgba(0, 1, 3, 0.808);margin: 2px; overflow: hidden;
+     }
+.gall-img{width: 100%; height: 100%;object-fit: cover;position: absolute;}
+     .item-info{display: flex; width: 100%;height: 100%;position:absolute; background-color: black;top: 0px,left
+      0px;justify-content: center; align-items: center; color: Yellow;font-weight: 100; }
+    .gall-img:hover{opacity: .1;  transition-duration: 1s;}
+  .item-info h1{
+    font-weight: 100;
+    font-size: 2em;
+  }
 
 
 
@@ -565,6 +571,7 @@ transform: rotateY(35deg) rotateX(1deg);
   .reel{
     margin-left:4%;
     margin-top:4%;
+    color: yellow;
     
   }
 
@@ -674,7 +681,10 @@ header h2{
     width: 70%;
     height: 100%;
   }
-  
+
+
+
+
   /* The Close Button */
   .close {
     color: #aaaaaa;
@@ -752,17 +762,15 @@ header h2{
         
         
     }
-   .item{
-     padding: 10px;
-     text-align: center;
-   }
+ 
     .modal{
         margin: auto;
         height: auto;
     
-    }.items-wrapper{height: auto;}
-    .items-wrapper h2{font-weight: 300;font-size: .3em;transform: scale(.5);width:100%;}
-    .items-wrapper img{width:40px;height: 40px;}
+    }
+    .items-wrapper{height: 120vh; flex-direction: column;}
+  .item-info{flex: 2;}
+  
    
     #pauseMontage{ 
         top:70%;
